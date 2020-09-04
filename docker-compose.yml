@@ -15,7 +15,7 @@ services:
   node1:
     # Datastax image for Cassandra version 3.x is pulled
     # from the docker within ING of public store.
-    image: datastax/dse-server:6.0.8
+    image: datastax/dse-server:6.8.3-ubi7
     # external via guest wifi
     # image: datastax/dse-server:6.0.8
     container_name: DSE-6_node1
@@ -60,7 +60,7 @@ services:
       nproc: 32768
       nofile: 100000
   node2:
-    image: datastax/dse-server:6.0.8
+    image: datastax/dse-server:6.8.3-ubi7
     # external via guest wifi
     # image: datastax/dse-server:6.0.8
     container_name: DSE-6_node2
@@ -94,7 +94,7 @@ services:
     depends_on:
     - node1
   node3:
-    image: datastax/dse-server:6.0.8
+    image: datastax/dse-server:6.8.3-ubi7
     # external via guest wifi
     # image: datastax/dse-server:6.0.8
     container_name: DSE-6_node3
