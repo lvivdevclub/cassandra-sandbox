@@ -4,6 +4,9 @@ services:
     hostname: cassandra-sandbox
     build: ./
     restart: always
+    networks:
+      dc1ring:
+        ipv4_address: 172.30.0.5
     links:
     - node1
     - node2
