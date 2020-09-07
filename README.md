@@ -1,3 +1,7 @@
+docker-compose build
+
+docker-compose up
+
 docker ps -a
 
 docker exec -it DSE-6_node1 bash
